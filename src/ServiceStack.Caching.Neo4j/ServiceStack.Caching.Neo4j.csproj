@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Version>1.0.0</Version>
+        <Title>An ICacheClient implementation to persist cached data in a Neo4j Graph DB</Title>
+        <Authors>Neil Dobson</Authors>
+        <Company>Barnardos Australia</Company>
+        <PackageDescription>
+            A Neo4j ICacheClient to persist cached data in a Neo4j Graph DB.
+            Implements ServiceStack's built-in Cache Provider:
+            https://docs.servicestack.net/caching
+        </PackageDescription>
+        <Description>
+            A Neo4j ICacheClient to persist cached data in a Neo4j Graph DB.
+            Implements ServiceStack's built-in Cache Provider:
+            https://docs.servicestack.net/caching
+        </Description>
+        <PackageProjectUrl>https://github.com/barnardos-au/Barnardos.ServiceStack.Caching.Neo4j</PackageProjectUrl>
+        <PackageTags>ServiceStack;Cache;Neo4j;POCO;Code-First</PackageTags>
+        <Copyright>Copyright ©2020 Barnardos Australia</Copyright>
+        <RepositoryUrl>https://github.com/barnardos-au/Barnardos.ServiceStack.Caching.Neo4j</RepositoryUrl>
+        <AssemblyName>ServiceStack.Caching.Neo4j</AssemblyName>
+        <PackageId>Barnardos.ServiceStack.Caching.Neo4j</PackageId>
+        <RootNamespace>ServiceStack.Caching.Neo4j</RootNamespace>
+        <PackageIcon>barnardos.png</PackageIcon>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Neo4j.Driver.Simple" Version="4.0.0" />
+        <PackageReference Include="ServiceStack.Interfaces.Core" Version="5.8.0" />
+        <PackageReference Include="ServiceStack.Text.Core" Version="5.8.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\Images\barnardos.png" Pack="true" PackagePath="\" />
+        <None Include="..\..\LICENSE" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+</Project>
